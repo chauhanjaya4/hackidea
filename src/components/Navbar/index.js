@@ -41,9 +41,7 @@ const Navbar = () => {
         <li className="nav-item">
         <a className="nav-link" href="contact.html">Reach Me</a>
         </li>
-        <li className="nav-item">
-        <a className="nav-link" href="contact.html">Weekly Updates</a>
-        </li>
+        
         
         </ul>
         </div>
@@ -191,139 +189,23 @@ const Navbar = () => {
 </div>
 
 </div>
-<div className="page_pageniation">
-<nav aria-label="Page navigation example">
-<ul className="pagination justify-content-center">
-<li className="page-item disabled">
-<a className="page-link" href="#" tabIndex="-1" aria-disabled="true">Previous</a>
-</li>
-<li className="page-item"><a className="page-link" href="#">1</a></li>
-<li className="page-item"><a className="page-link" href="#">2</a></li>
-<li className="page-item"><a className="page-link" href="#">3</a></li>
-<li className="page-item">
-<a className="page-link" href="#">Next</a>
-</li>
-</ul>
-</nav>
-</div>
+
 </div>
 
 </div>
 </div>
 </section>
 
-<section className="all_post section_padding">
-<div className="container">
 
-<div className="row">
-
-<div className="col-lg-12">
-<div ><h3 className="text1">My Posts</h3></div>
-<div className="row">
-
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-  
-<div className="single_post_img">
-<img src="img/post/cleaning_tips.jpg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> Best Cleaning Tips</h5></a>
-<a href="single-blog.html"><h2>Get Best Household Cleaning Tips</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-<div className="single_post_img">
-<img src="img/post/smelly_shoes.jpg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> How To Get Rid Of Smelly Shoes</h5></a>
-<a href="single-blog.html"><h2>Tips For Getting Rid Of Smelly Shoes</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-<div className="single_post_img">
-<img src="img/post/howtooranizeanything1.jpg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> How to Organize Anything</h5></a>
-<a href="single-blog.html"><h2>Learn to Oragnize things In A Right Way</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-<div className="single_post_img">
-<img src="img/post/right_pan1.jpg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> Best Pan </h5></a>
-<a href="single-blog.html"><h2>Choose Right Pan for Your Kitchen</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-<div className="single_post_img">
-<img src="img/post/differenttypesof_health1.jpg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> All About Health</h5></a>
-<a href="single-blog.html"><h2>Know All About Your Health</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-<div className="col-lg-4 col-sm-6">
-<div className="single_post post_1">
-<div className="single_post_img">
-<img src="img/post/clean_gas.jpeg" alt=""/>
-</div>
-<div className="single_post_text text-center">
-<a href="category.html"><h5> Clean Gas Stove</h5></a>
-<a href="single-blog.html"><h2>How to Clean Your Gas Stove</h2></a>
-<p>Posted on April 15, 2019</p>
-</div>
-</div>
-</div>
-
-</div>
-<div className="page_pageniation">
-<nav aria-label="Page navigation example">
-<ul className="pagination justify-content-center">
-<li className="page-item disabled">
-<a className="page-link" href="#" tabIndex="-1" aria-disabled="true">Previous</a>
-</li>
-<li className="page-item"><a className="page-link" href="#">1</a></li>
-<li className="page-item"><a className="page-link" href="#">2</a></li>
-<li className="page-item"><a className="page-link" href="#">3</a></li>
-<li className="page-item">
-<a className="page-link" href="#">Next</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-
-</div>
-</div>
-</section>
 <section className="social_connect_part">
+  <h3>What's New</h3> 
 <div className="container-fluid">
 <div className="row">
 <div className="col-xl-12">
 <div className="social_connect">
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="img/insta/instagram_1.png" className="" alt="blog"/>
+<img src="img/sidebar/gift_ideas.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
@@ -331,7 +213,7 @@ const Navbar = () => {
 </div>
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="img/insta/instagram_2.png" className="" alt="blog"/>
+<img src="img/sidebar/hackgiveaway.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
@@ -339,7 +221,7 @@ const Navbar = () => {
 </div>
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="../img/insta/instagram_3.png" className="" alt="blog"/>
+<img src="img/sidebar/quick_decorationideas.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
@@ -347,7 +229,7 @@ const Navbar = () => {
 </div>
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="img/insta/instagram_4.png" className="" alt="blog"/>
+<img src="img/sidebar/wheredofruitflies_comefrom.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
@@ -355,7 +237,7 @@ const Navbar = () => {
 </div>
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="img/insta/instagram_5.png" className="" alt="blog"/>
+<img src="img/sidebar/shoppingon_sale.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
@@ -363,7 +245,7 @@ const Navbar = () => {
 </div>
 <div className="single-social_connect">
 <div className="social_connect_img">
-<img src="img/insta/instagram_6.png" className="" alt="blog"/>
+<img src="img/sidebar/wd-40.webp" className="" alt="blog"/>
 <div className="social_connect_overlay">
 <a href="#"><span className="ti-instagram"></span></a>
 </div>
