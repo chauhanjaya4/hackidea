@@ -4,13 +4,21 @@ import React from 'react';
 import "../assets/css/style.css";
 import "../assets/css/extra.css";
 
-
+import emailjs from 'emailjs-com'
 
 
 
 
 
 const Navbar = () => {
+
+  function sendEmail(e)
+  {
+    e.preventDefault();
+    emailjs.sendForm('service_i75kar4','template_r1p5mzl',e.target,
+    "user_eloiau8ZcAlMG4fRlAAtS").then(res=>{console.log(res);
+    }).catch(err=> console.log(err));
+  }
     return (
         <>
                   
@@ -36,11 +44,12 @@ const Navbar = () => {
         <a className="nav-link" href="archive.html">My Posts</a>
         </li>
         <li className="nav-item">
-        <a className="nav-link" href="category.html"> What's New</a>
-        </li>
-        <li className="nav-item">
         <a className="nav-link" href="contact.html">Reach Me</a>
         </li>
+        <li className="nav-item">
+        <a className="nav-link" href="category.html"> What's New</a>
+        </li>
+        
         
         
         </ul>
@@ -195,7 +204,28 @@ const Navbar = () => {
 </div>
 </div>
 </section>
-
+<section>
+<div className="form">
+        <div className="header">
+          <h1>Welcome!</h1>
+          <p>Please provide your information below.</p>
+        </div>
+        <div className="inputcontainer">
+          <form onSubmit={sendEmail}>
+          {/* Below are the text fields that record the user's information. Each uses the onChange event handler, and sets the user input value to the component's state in real time using e.target.value    */}
+          <input filter="[^a-zA-Z ]" name="firstName" placeholder="First Name"  defaultValue="" />
+          <input  name="email" placeholder="Enter Email" defaultValue="" />
+          
+          
+          <textarea name='message' rows='4' placeholder="Enter Message"/>
+          
+          
+          {/* Below is the submit button. Using the onClick event handler, it changes the value of this.state.display to false, which would trigger the ternary in the render method to display the user's info instead of this form*/}
+          <input type="Submit" defaultValue='Send'/>
+          </form>
+        </div>
+      </div>
+</section>
 
 <section className="social_connect_part">
   <h3>What's New</h3> 
@@ -276,9 +306,10 @@ const Navbar = () => {
 <h4>Important Link</h4>
 <ul>
 <li><a href="#">Weekly Updates</a></li>
-<li><a href="#">Posts</a></li>
 <li><a href="#">Reach Me</a></li>
-<li><a href="#">Important Updates</a></li>
+<li><a href="#">Posts</a></li>
+
+
 
 </ul>
 </div>
