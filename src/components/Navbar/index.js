@@ -3,24 +3,39 @@ import React from 'react';
 
 import "../assets/css/style.css";
 import "../assets/css/extra.css";
+import { BrowserRouter} from "react-router-dom";
+import { Nav , NavbarContainer, NavLogo} from './NavbarElements';
 
-import emailjs from 'emailjs-com'
+//import emailjs from 'emailjs-com'
 
 
 
 
 const Navbar = () => {
 
-  function sendEmail(e)
-  {
-    e.preventDefault();
-    emailjs.sendForm('service_i75kar4','template_r1p5mzl',e.target,
-    "user_eloiau8ZcAlMG4fRlAAtS").then(res=>{console.log(res);
-    }).catch(err=> console.log(err));
-  }
+  
     return (
         <>
-                  
+         <Nav>
+           <NavbarContainer>
+             <NavLogo to='/'>
+             
+             <img src="img/logo.png" alt="logo"/> 
+               
+             </NavLogo>
+             <MobileIcon>
+               <FaBars/>
+             </MobileIcon>
+             <NavMenu>
+               <NavItem>
+                 <NavLinks to="about">About This Channel</NavLinks>
+                 <NavLinks to="myposts">My Posts</NavLinks>
+                 <NavLinks to="reachme">Reach Me</NavLinks>
+                 <NavLinks to="whatsnew">What's New</NavLinks>
+               </NavItem>
+             </NavMenu>
+           </NavbarContainer>
+           </Nav>         
         <header className="main_menu">
         <div className="container">
         <div className="row align-items-center">
@@ -210,7 +225,7 @@ const Navbar = () => {
           <p>Please provide your information below.</p>
         </div>
         <div className="inputcontainer">
-          <form onSubmit={sendEmail}>
+          <form >
           {/* Below are the text fields that record the user's information. Each uses the onChange event handler, and sets the user input value to the component's state in real time using e.target.value    */}
           <input filter="[^a-zA-Z ]" name="firstName" placeholder="First Name"  defaultValue="" />
           <input  name="email" placeholder="Enter Email" defaultValue="" />
@@ -341,7 +356,7 @@ const Navbar = () => {
 </div>
 </footer>
         </>
-    )
-}
+    );
+};
 
 export default Navbar
