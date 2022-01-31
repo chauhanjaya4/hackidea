@@ -9,7 +9,6 @@ import emailjs from 'emailjs-com'
 
 
 
-
 const Navbar = () => {
 
   function sendEmail(e)
