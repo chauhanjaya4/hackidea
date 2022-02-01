@@ -1,10 +1,10 @@
 import React from 'react';
-
+import{FaBars} from 'react-icons/fa'
 
 import "../assets/css/style.css";
 import "../assets/css/extra.css";
 import { BrowserRouter} from "react-router-dom";
-import { Nav , NavbarContainer, NavLogo} from './NavbarElements';
+import { Nav , NavbarContainer, NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from './NavbarElements';
 
 //import emailjs from 'emailjs-com'
 
@@ -29,9 +29,15 @@ const Navbar = () => {
              <NavMenu>
                <NavItem>
                  <NavLinks to="about">About This Channel</NavLinks>
-                 <NavLinks to="myposts">My Posts</NavLinks>
-                 <NavLinks to="reachme">Reach Me</NavLinks>
-                 <NavLinks to="whatsnew">What's New</NavLinks>
+                 </NavItem>
+                 <NavItem> 
+                   <NavLinks to="myposts">My Posts </NavLinks>
+                   </NavItem>
+                   <NavItem>
+                      <NavLinks to="reachme">Reach Me</NavLinks>
+                      </NavItem>
+                      <NavItem>
+                        <NavLinks to="whatsnew">What's New</NavLinks>
                </NavItem>
              </NavMenu>
            </NavbarContainer>
