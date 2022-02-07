@@ -4,14 +4,14 @@ import{FaBars} from 'react-icons/fa'
 import "../assets/css/style.css";
 import "../assets/css/extra.css";
 import { BrowserRouter} from "react-router-dom";
-import { Nav , NavbarContainer, NavLogo,MobileIcon,NavMenu,NavItem,NavLinks} from './NavbarElements';
+import { Nav , NavbarContainer, NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
 
 //import emailjs from 'emailjs-com'
 
 
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
 
   
     return (
@@ -23,7 +23,7 @@ const Navbar = () => {
              <img src="img/logo.png" alt="logo"/> 
                
              </NavLogo>
-             <MobileIcon>
+             <MobileIcon onClick={toggle}>
                <FaBars/>
              </MobileIcon>
              <NavMenu>
@@ -39,59 +39,17 @@ const Navbar = () => {
                       <NavItem>
                         <NavLinks to="whatsnew">What's New</NavLinks>
                </NavItem>
+               <NavItem>
+                        <NavLinks to="signup">Sign Up</NavLinks>
+               </NavItem>
+
              </NavMenu>
+             <NavBtn>
+                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
+               </NavBtn>
            </NavbarContainer>
            </Nav>         
-        <header className="main_menu">
-        <div className="container">
-        <div className="row align-items-center">
-        <div className="col-lg-12">
-        <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="index.html">
-             <img src="img/logo.png" alt="logo"/> </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse main-menu-item justify-content-center" id="navbarSupportedContent">
-        <ul className="navbar-nav">
-        <li className="nav-item active">
-        <a className="nav-link" href="index-2.html">Home</a>
-        </li>
-        <li className="nav-item active">
-        <a className="nav-link" href="index-2.html">About This Channel</a>
-        </li>
-        <li className="nav-item">
-        <a className="nav-link" href="archive.html">My Posts</a>
-        </li>
-        <li className="nav-item">
-        <a className="nav-link" href="contact.html">Reach Me</a>
-        </li>
-        <li className="nav-item">
-        <a className="nav-link" href="category.html"> What's New</a>
-        </li>
-        
-        
-        
-        </ul>
-        </div>
-        <div className="header_social_icon d-none d-lg-block">
-        <ul>
-        <li>
-        <div id="wrap">
-        
-        </div>
-        </li>
-        <li><a href="https://www.facebook.com/Hackideatrick-105208221554690" className="d-none d-lg-block"><i className="ti-facebook"></i></a></li>
-        
-        <li><a href="https://www.instagram.com/hackideatrick/" className="d-none d-lg-block"><i className="ti-instagram"></i></a></li>
-        
-        </ul>
-        </div>
-        </nav>
-        </div>
-        </div>
-        </div>
-        </header> 
+
         
 <section className="banner_post">
 <div className="container-fluid">
