@@ -5,30 +5,62 @@ import "../assets/css/style.css";
 import "../assets/css/extra.css";
 import { BrowserRouter} from "react-router-dom";
 import { Nav , NavbarContainer, NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,NavBtnLink} from './NavbarElements';
-
+import { animateScroll as scroll}  from 'react-scroll';
 //import emailjs from 'emailjs-com'
 
 
 
 
 const Navbar = ({toggle}) => {
+  const [scrollNav, setScrollNav] = useState(false)
 
   
+ 
+
+  const changeNav = () => {
+ if(window.scrollY >= 80)
+ {
+   setScrollNav(true)
+
+ }
+else
+{
+  setScrollNav(false)
+}
+
+
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, []);
+  
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }; 
     return (
         <>
-         <Nav>
+         <Nav scrollNav= {scrollNav}>
            <NavbarContainer>
              <NavLogo to='/'>
              
              <img src="img/logo.png" alt="logo"/> 
                
              </NavLogo>
-             <MobileIcon onClick={toggle}>
+             <MobileIcon onClick={toggleHome}>
                <FaBars/>
              </MobileIcon>
              <NavMenu>
                <NavItem>
-                 <NavLinks to="about">About This Channel</NavLinks>
+                 <NavLinks to='about' 
+                 smooth={true} 
+                 duration={500} 
+                 spy={true} 
+                 exact='true' 
+                 offset={-80}
+                 activeClass="active">
+                   About This Channel
+                   </NavLinks>
                  </NavItem>
                  <NavItem> 
                    <NavLinks to="myposts">My Posts </NavLinks>
