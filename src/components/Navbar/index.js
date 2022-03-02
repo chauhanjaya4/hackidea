@@ -63,16 +63,40 @@ else
                    </NavLinks>
                  </NavItem>
                  <NavItem> 
-                   <NavLinks to="myposts">My Posts </NavLinks>
+                   <NavLinks to='myposts'
+                   smooth={true} 
+                   duration={500} 
+                   spy={true} 
+                   exact='true' 
+                   offset={-80}
+                   
+                   >My Posts </NavLinks>
                    </NavItem>
                    <NavItem>
-                      <NavLinks to="reachme">Reach Me</NavLinks>
+                      <NavLinks to='reachme'
+                      smooth={true} 
+                      duration={500} 
+                      spy={true} 
+                      exact='true' 
+                      offset={-80}
+                      >Reach Me</NavLinks>
                       </NavItem>
                       <NavItem>
-                        <NavLinks to="whatsnew">What's New</NavLinks>
+                        <NavLinks to='whatsnew'
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
+                        >What's New</NavLinks>
                </NavItem>
                <NavItem>
-                        <NavLinks to="signup">Sign Up</NavLinks>
+                        <NavLinks to='signup'
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Sign Up</NavLinks>
                </NavItem>
 
              </NavMenu>
