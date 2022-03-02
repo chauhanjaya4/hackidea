@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Video from '../../videos/video.mp4';
+import {HeroContainer, HeroBg,VideoBg} from './HeroElements';
 
 const HeroSection = () => {
     return(
@@ -7,7 +9,7 @@ const HeroSection = () => {
     
 </HeroBg>
         </HeroContainer>
-    )
-}
+    );
+};
 
-export default HeroSection
+export default HeroSection;
