@@ -1,9 +1,9 @@
-//import React from 'react';
+import React from 'react';
 
 import {BrowserRouter as Router} from 'react-router-dom'
-//import Home from './pages';
+import Home from './pages';
 
-/*function App(){
+function App(){
   return(
   <Router>
 
@@ -12,11 +12,11 @@ import {BrowserRouter as Router} from 'react-router-dom'
   );
   
   
-};*/
+};
 /*const MyName=()=>{
   return(<><h1>jaya</h1></>);
 }*/
-const App = () => (
+/*const App = () => (
 
-);
+);*/
 export default App;
