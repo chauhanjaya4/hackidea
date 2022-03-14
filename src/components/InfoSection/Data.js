@@ -1,6 +1,21 @@
 
-
-return (
+export const homeObjOne = {
+  id:'about',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Premium Bank',
+  headline: 'Unlimited Transactions with zero fees',
+  description:'hello',
+  buttonLabel: 'Get started',
+  imgStart: false,
+  //img: require('../../images/svg-1.svg'),
+  alt:'Car',
+  dark:true,
+  primary: true,
+  darkText:false
+};
+/*return (
   <>
 <section className="banner_post" id="home">
 <div className="container-fluid">
@@ -141,7 +156,7 @@ return (
         </div>
         <div className="inputcontainer">
           <form >
-          {/* Below are the text fields that record the user's information. Each uses the onChange event handler, and sets the user input value to the component's state in real time using e.target.value    */}
+          { Below are the text fields that record the user's information. Each uses the onChange event handler, and sets the user input value to the component's state in real time using e.target.value    }
           <input filter="[^a-zA-Z ]" name="firstName" placeholder="First Name"  defaultValue="" />
           <input  name="email" placeholder="Enter Email" defaultValue="" />
           
@@ -149,7 +164,7 @@ return (
           <textarea name='message' rows='4' placeholder="Enter Message"/>
           
           
-          {/* Below is the submit button. Using the onClick event handler, it changes the value of this.state.display to false, which would trigger the ternary in the render method to display the user's info instead of this form*/}
+          {Below is the submit button. Using the onClick event handler, it changes the value of this.state.display to false, which would trigger the ternary in the render method to display the user's info instead of this form}
           <input type="Submit" defaultValue='Send'/>
           </form>
         </div>
@@ -217,4 +232,4 @@ return (
 </section>
 </>
 );
-};
+};*/
