@@ -3,7 +3,14 @@ import React, {useState} from 'react';
 import  HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection'; 
 import {
-  homeObjOne
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+  homeObjFour,
+  homeObjFive
+
+
+
   
 } from '../components/InfoSection/Data';
 import  Navbar from '../components/Navbar';
@@ -20,10 +27,10 @@ const Home = () => {
   <Navbar toggle={toggle} />
   <HeroSection/>
   <InfoSection {...homeObjOne} />
-  <InfoSection {...homeObjOne} />
-  <InfoSection {...homeObjOne} />
-  <InfoSection {...homeObjOne} />
-  <InfoSection {...homeObjOne} />
+  <InfoSection {...homeObjTwo} />
+  <InfoSection {...homeObjThree} />
+  <InfoSection {...homeObjFour} />
+  <InfoSection {...homeObjFive} />
   
   </>);
 };
