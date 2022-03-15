@@ -17,16 +17,16 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id:'about',
+  id:'myposts',
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Premium Bank',
+  topLine: 'Fashion / Lifestyle Hacks',
   headline: 'Unlimited Transactions with zero fees',
-  description:'hello',
-  buttonLabel: 'Get started',
-  imgStart: false,
-  //img: require('../../images/svg-1.svg'),
+  
+  imgStart: true,
+  
+  img: require('../assets/img/banner_blog/sujita/banner1.jpeg'),
   alt:'Car',
   dark:true,
   primary: true,
@@ -34,7 +34,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id:'about',
+  id:'reachme',
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -51,7 +51,7 @@ export const homeObjThree = {
 };
 
 export const homeObjFour = {
-  id:'about',
+  id:'whatsnew',
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -68,7 +68,7 @@ export const homeObjFour = {
 };
 
 export const homeObjFive = {
-  id:'about',
+  id:'signup',
   lightBg: false,
   lightText: true,
   lightTextDesc: true,

@@ -9,6 +9,7 @@ color: #fff;
     padding: 100px 0;
 }
 `;
+
 export const InfoWrapper = styled.div`
 display: grid;
 z-index:1;
